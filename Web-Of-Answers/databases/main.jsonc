@@ -1,6 +1,58 @@
 {
-    "texts": [
-        "Maybe rethink this.",
+  "texts": [
+    // Negative
+    "I'm not sure that's a good idea.",
+    "Maybe rethink this.",
+    "That doesn't seem right.",
+    "I wouldn't count on it.",
+    "Perhaps not the best choice.",
+    "Are you certain about this?",
+    "That might not end well.",
+    "It seems risky.",
+    "I have my doubts.",
+    "You might want to reconsider.",
+    "It's probably not worth it.",
+    "Not the best idea.",
+    "I wouldn't recommend it.",
+    "That could be problematic.",
+    "Think twice before proceeding.",
+
+    // Positive
+    "Absolutely, go for it!",
+    "That sounds like a great idea!",
+    "Yes, you can do it!",
+    "I believe in you!",
+    "This is a fantastic choice!",
+    "You're on the right track!",
+    "Go ahead, it's a good plan.",
+    "You have my support!",
+    "This will work out well.",
+    "You're making the right decision.",
+    "Keep going, you're doing great!",
+    "I have no doubts, it's a yes!",
+    "Trust your instincts, go for it!",
+    "It's a brilliant idea!",
+    "Success is just around the corner!",
+
+    // Moderate
+    "It's worth considering.",
+    "There might be a better option.",
+    "It's possible.",
+    "Give it some thought.",
+    "Maybe, maybe not.",
+    "Weigh the pros and cons.",
+    "It's a fifty-fifty chance.",
+    "Consider all angles.",
+    "There are pros and cons.",
+    "Think about the consequences.",
+    "It's not black and white.",
+    "Take your time to decide.",
+    "It depends on the context.",
+    "Look at the big picture.",
+    "There could be unforeseen factors."
+  ],
+  "negative": [
+    "Maybe rethink this.",
     "That doesn't seem right.",
     "Wouldn't count on it.",
     "Perhaps not the best choice.",
@@ -118,8 +170,9 @@
     "May encounter obstacles.",
     "Requires more planning.",
     "Not fully convinced.",
-    "It's a bit uncertain.",
-
+    "It's a bit uncertain."
+  ],
+  "positive": [
     "Absolutely, go for it!",
     "That sounds like a great idea!",
     "Yes, you can do it!",
@@ -270,8 +323,9 @@
     "Keep aiming high!",
     "You're on the winning streak!",
     "Keep up the awesome work!",
-    "Success is your journey!",
-
+    "Success is your journey!"
+  ],
+  "moderate": [
     "It's worth considering.",
     "There might be a better option.",
     "It's possible.",
@@ -414,5 +468,5 @@
     "Assess the advantages and disadvantages.",
     "Think about the implications.",
     "Consider the complexity."
-    ]
+  ]
 }

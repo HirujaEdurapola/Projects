@@ -1,1 +1,44 @@
-hello worrrldd
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Web Of Answers</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Disclaimer: The answer displayed is randomly generated and should not be relied upon
+      </div>
+    <div id="container">
+    <h1 id="answer">Click The Button To Start</h1>
+    <button id="startButton" onclick="startDisplay()">Start</button>
+    <h4 id="agree">By clicking start, you agree to our <a href="./EULA.html" style="text-decoration: none;">User Agreement</a>.</h4>
+    <button id="stopButton" hidden="true" onclick="stopDisplay()">Stop</button>
+    </div>
+    <h2>Copyright &copy; 2024 Hiruja Edurapola. All Rights Reserved.</h2>
+    <script src="./js/app.js"></script>
+    <script>
+        // Get all elements with class="closebtn"
+        var close = document.getElementsByClassName("closebtn");
+        var i;
+        
+        // Loop through all close buttons
+        for (i = 0; i < close.length; i++) {
+          // When someone clicks on a close button
+          close[i].onclick = function(){
+        
+            // Get the parent of <span class="closebtn"> (<div class="alert">)
+            var div = this.parentElement;
+        
+            // Set the opacity of div to 0 (transparent)
+            div.style.opacity = "0";
+        
+            // Hide the div after 600ms (the same amount of milliseconds it takes to fade out)
+            setTimeout(function(){ div.style.display = "none"; }, 600);
+          }
+        }
+        </script>
+</body>
+</html>
