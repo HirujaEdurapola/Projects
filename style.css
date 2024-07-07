@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('./JetBrainsMono[wght].ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'JetBrains Mono', monospace;
+    
+    background-color: white;
+    background-color: #333;
+    color: white;
+    
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin: 2vh;
+    background-color: white;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container h4{
+    margin-top: 2%;
+    margin-bottom: 10%;
+    margin-right: auto;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    /* height: 30vh; */
+    background-color: white;
+    background-color: #333;
+  }
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* padding: 2vh; */
+    background-color: black;
+    /* height: 100vh; */
+    min-height: 100vh;
+}
+
+h4{
+    font-size: calc((1vw + 1vh) * 1.4);
+    padding: 1vh;
+    font-weight: 900;
+}
+
+.container p{
+    font-size: calc(0.8vw + 0.8vh);
+}
+
+button{
+    background-color: white;
+    border: none;
+    color: black;
+    font-family: 'JetBrains Mono', monospace;
+    padding: 1vh;
+    width: 30%;
+    border-radius: 10px;
+    font-weight: 900;
+    margin-top: 5%;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .card{
+        height: 70vh;
+    }
+}
+
+@media (max-width: 530px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .card{
+        margin-bottom: 25%;
+    }
+  .container  p{
+        font-size: calc((1vw + 1vh) * 1.25);
+    }
+    h4{
+        font-size: calc((1vw + 1vh) * 1.8);
+    }
+}
