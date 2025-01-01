@@ -3,7 +3,7 @@ let intervalId;
 let loadedData;
 
 
-fetch('https://hirujaedurapola.github.io/Projects/Web-Of-Answers/databases/data.json')
+fetch('https://projects.hirujaedurapola.com/Web-Of-Answers/databases/data.json')
     .then(response => response.json())
     .then(data => {
         const texts = data.texts;
